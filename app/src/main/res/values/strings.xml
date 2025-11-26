@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AVI</string>
+
+    <string name="bienvenido">Bienvenido</string>
+    <string name="descripcion_inicio">Ingresa a nuestra app y descubre tu vocacion.</string>
+    <string name="inicio">INICIAR SESION</string>
+    <string name="registro">REGISTRO</string>
+
+    <string name="nombre">Nombre</string>
+    <string name="telefono">Telefono</string>
+    <string name="correo">Correo</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="registrarbtn">Registrar</string>
+
+    <string name="dtv"><u>Descubre tu Vocación</u></string>
+    <string name="tv">Test Vocacional</string>
+    <string name="ar"><u>Accesos Rapidos</u></string>
+    <string name="avi">AVI</string>
+
+
+</resources>
