@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AVI">
         <activity
+            android:name=".User"
+            android:exported="false" />
+        <activity
             android:name=".Principal"
             android:exported="false" />
         <activity

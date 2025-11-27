@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -16,6 +17,8 @@ public class Iniciar_sesion extends AppCompatActivity {
 
     Button btniniciosesion;
 
+    EditText edtCorreo, edtPass;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,13 +26,21 @@ public class Iniciar_sesion extends AppCompatActivity {
 
         btniniciosesion=findViewById(R.id.btniniciosesion);
 
-        btniniciosesion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent iniciosesion = new Intent(Iniciar_sesion.this, Principal.class);
-                startActivity(iniciosesion);
-                Toast.makeText(Iniciar_sesion.this, "Sesion Iniciada", Toast.LENGTH_SHORT).show();
+        edtCorreo=findViewById(R.id.edtCorreo);
+        edtPass=findViewById(R.id.edtPass);
+
+        btniniciosesion.setOnClickListener(v -> {
+            String texto = edtCorreo.getText().toString().trim();
+
+            if (texto.isEmpty()) {
+                edtCorreo.setError("Este campo es obligatorio");
+                edtCorreo.requestFocus();
+            } else {
+                // Aquí continúa la lógica si el campo NO está vacío}
+                Intent intent = new Intent(Iniciar_sesion.this, Principal.class);
+                startActivity(intent);
             }
+
         });
     }
 }
