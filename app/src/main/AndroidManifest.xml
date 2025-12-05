@@ -12,19 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AVI">
         <activity
-            android:name=".User"
+            android:name=".controller.User"
             android:exported="false" />
         <activity
-            android:name=".Principal"
+            android:name=".controller.Principal"
             android:exported="false" />
         <activity
-            android:name=".IniciarSesion"
+            android:name=".controller.IniciarSesion"
             android:exported="false" />
         <activity
-            android:name=".Registro"
+            android:name=".controller.Registro"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".controller.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
