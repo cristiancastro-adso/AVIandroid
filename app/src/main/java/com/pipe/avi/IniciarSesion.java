@@ -2,18 +2,12 @@ package com.pipe.avi;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-public class Iniciar_sesion extends AppCompatActivity {
+public class IniciarSesion extends AppCompatActivity {
 
     Button btniniciosesion;
 
@@ -37,7 +31,7 @@ public class Iniciar_sesion extends AppCompatActivity {
                 edtCorreo.requestFocus();
             } else {
                 // Aquí continúa la lógica si el campo NO está vacío}
-                Intent intent = new Intent(Iniciar_sesion.this, Principal.class);
+                Intent intent = new Intent(IniciarSesion.this, Principal.class);
                 startActivity(intent);
             }
 

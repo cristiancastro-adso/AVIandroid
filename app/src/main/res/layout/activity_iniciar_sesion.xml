@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".Registro"
     android:orientation="vertical"
-    android:background="@drawable/fondo_degradado">
+    android:background="@drawable/nuevofondo">
 
     <LinearLayout
         android:layout_width="350dp"

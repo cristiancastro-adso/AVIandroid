@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         btniniciosesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent iniciosesion = new Intent(MainActivity.this, Iniciar_sesion.class);
+                Intent iniciosesion = new Intent(MainActivity.this, IniciarSesion.class);
                 startActivity(iniciosesion);
             }
         });

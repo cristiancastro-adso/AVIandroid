@@ -7,11 +7,11 @@
     android:layout_height="match_parent"
     tools:context=".Registro"
     android:orientation="vertical"
-    android:background="@drawable/fondo_degradado">
+    android:background="@drawable/nuevofondo">
 
     <LinearLayout
         android:layout_width="362dp"
-        android:layout_height="411dp"
+        android:layout_height="450dp"
         android:layout_gravity="center"
         android:background="@drawable/form"
         android:orientation="vertical"
@@ -29,6 +29,17 @@
             android:textColor="@color/azuloscurosena"
             android:textSize="30dp"
             android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtID"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="@string/id"
+            android:inputType="textPersonName"
+            android:textColor="@color/azuloscurosena"
+            android:textColorHint="@color/azuloscurosena" />
 
         <EditText
             android:id="@+id/edtNombre"
@@ -75,17 +86,18 @@
             android:textColorHint="@color/azuloscurosena" />
 
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnregistrado"
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginTop="25dp"
+            android:background="@drawable/botondegradado"
             android:text="@string/registrarbtn"
-            android:textColor="@color/azuloscurosena"
-            android:textSize="25dp"
-            app:strokeColor="@color/azuloscurosena" />
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:backgroundTint="@null"
+            app:cornerRadius="40dp"
+            android:layout_marginTop="20dp"/>
 
     </LinearLayout>
 

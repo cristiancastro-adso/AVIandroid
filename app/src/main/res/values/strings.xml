@@ -28,6 +28,8 @@
     <string name="noti">Notificaciones</string>
     <string name="ayuda">Centro de Ayuda</string>
     <string name="info">Acerca de</string>
+    <string name="programas">Programas</string>
+    <string name="id">Identificacion</string>
 
 
 </resources>
